@@ -1,0 +1,14 @@
+Noodle recipe app
+
+App contains different noodle recipes. User can share the recipes they like in social media and they can submit their own recipes which need to approved before they are included into the app.
+
+Login (with FB, TW, G)
+Search for the recipe
+Comment, like, share the recipe
+Submit own recipes
+Logout
+
+
+Questions:
+How can we include login with different social medias?
+Commenting, liking, sharing the content in the app?
