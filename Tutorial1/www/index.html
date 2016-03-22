@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+    Any of the green text is marked as comments it will not show in your app.
+    The ones below are used to explain the basics of the index page.
+    Before continuing got to your apps folder directory in cmd.
+    when in the tutorial-1 folder type the following and hit enter:
+        ionic serve -w Chrome
+    The above statment means we will serve our app in the chrome browser.
+    With the browser active press Ctrl+Shift+i (on Mac/Linux open the menu and start developer tools.)
+ -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Tutorial-1</title>
+    <!-- 
+        These link statements and script statements are the standard resources that help for building Ionic apps. 
+        Do not remove these applications 
+        -->
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <!-- 
+      The ng-app is used for creating a link to the AngularJs code that will act as the backbone of your application.
+      These covers things like Navigation and Routing which can be explained in the tutorials in these links:
+      - http://www.w3schools.com/angular/ (Great intro to the ideals of Angular with examples.)
+      - http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro 
+      (This uses HTML5 instead of Ionic tags but they are interchangeable).
+      - Also try delete the ng-app="start" and see what happens, then undo it
+      -->
+  <body ng-app="start">
+    <!-- 
+        ion-pane is simply described as a window area in the application like a placeholder 
+        -->
+    <ion-pane>
+      <!--
+          most if not all tags that are native to ionic have the keyword ion- preceding the statement.
+          for example the below statement ion-header-bar means a container at the top.
+          the class of this header bar denotes the style of the bar.
+          
+          Ionic has many pre defined styles
+       -->
+      <ion-header-bar class="bar-dark">
+        <!-- while your application is running try changing the text of the h1 or even remove the class="title".  -->
+        <h1 class="title">Tutorial site is the best site</h1>
+      </ion-header-bar>
+      <ion-content>
+          <!-- 
+              This is the content section for our app's current view. 
+              anything you want displayed will be placed here in the begining.
+              visit: http://ionicframework.com/docs/components/ to find ideas for what can be added.
+              
+              I suggest trying to add a picture and some common details 
+              about yourself like your filling in a profile just as a test.
+              -->
+              <button class="button button-block button-light" ui-sref="pOne">pOne</button>
+              <button class="button button-block button-light" ui-sref="pTwo">pTwo</button>
+              <button class="button button-block button-light" ui-sref="pThree">pThree</button>
+              <button class="button button-block button-light" ui-sref="pFour">pFour</button>
+              <button class="button button-block button-light" ui-sref="pFive">pFive</button>
+
+      </ion-content>
+    </ion-pane>
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>
+<!-- 
+    Now that you have finished reading these comments. Please delete from line 33 to 57.
+    Since we will add a side menu soon.
+    Then open the js/app.js and review the notes there before continuing.
+    -->
